@@ -14,12 +14,13 @@ import java.io.IOException;
  * @Author DU425
  * @Date 2023/3/14 16:23
  * @Version 1.0
- * @Description
+ * @Description required a bean of type
+ * 'javax.servlet.FilterChain' that could not be found.
  */
 @Component
 public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
 
-    @Autowired
+
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
